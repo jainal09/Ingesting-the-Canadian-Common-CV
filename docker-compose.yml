@@ -1,0 +1,80 @@
+  version: '3'
+  services:
+    web:
+      image: ingesting_common_cv:latest
+      container_name : django
+      build:
+        context: .
+        dockerfile: Dockerfile
+      command: python manage.py runserver 0.0.0.0:8000
+      volumes:
+        - .:/Ingesting_Common_CV
+      ports:
+        - "8000:8000"
+      expose:
+        - "8000"
+      depends_on:
+        - create_db
+    migration:
+      image: ingesting_common_cv:latest
+      container_name: migtrations
+      command: >
+         sh -c " sleep 25 && python manage.py migrate"
+      volumes:
+        - .:/Ingesting_Common_CV
+      depends_on:
+        - populate_db
+    create_db:
+      image: ingesting_common_cv:latest
+      container_name: create_db
+      command: >
+        sh -c "rm -f db.sqlite3 &&
+               sqlite3 db.sqlite3 ".database" "
+      volumes:
+        - .:/Ingesting_Common_CV
+    populate_db:
+      image: ingesting_common_cv:latest
+      container_name: populate_db
+      command: >
+        sh -c " sleep 3 && python populate.py"
+      volumes:
+        - .:/Ingesting_Common_CV
+      depends_on:
+        - create_db
+    elasticsearch:
+      image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
+      container_name: elasticsearch
+      environment:
+        - xpack.security.enabled=false
+        - discovery.type=single-node
+        - network.bind_host=0.0.0.0
+      ulimits:
+        memlock:
+          soft: -1
+          hard: -1
+        nofile:
+          soft: 65536
+          hard: 65536
+      cap_add:
+        - IPC_LOCK
+      volumes:
+        - elasticsearch-data:/usr/share/elasticsearch/data
+      ports:
+        - 9200:9200
+        - 9300:9300
+    build_indexers:
+      image: ingesting_common_cv:latest
+      container_name: elastic_indexer_build
+      environment:
+        - ES_HOST=elasticsearch
+        - ES_PORT=9200
+      depends_on:
+        - elasticsearch
+        - populate_db
+      command: >
+        sh -c "sleep 60 && python manage.py index_questions"
+      volumes:
+        - .:/Ingesting_Common_CV
+  volumes:
+    elasticsearch-data:
+      driver: local

@@ -1,0 +1,7 @@
+Django
+elasticsearch
+elasticsearch-dsl
+peewee
+lxml
+django-cors-headers
+djangorestframework

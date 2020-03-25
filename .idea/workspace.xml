@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1022e707-02dd-448b-9cb6-0aa9bfc706b3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZVdUlU9kBZuygacuEJJyH2x0bJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jaina\OneDrive - Microsoft Student Partners\Desktop\Ingesting_Common_CV\DisplayData" />
+      <recent name="C:\Users\agm11\PycharmProjects\Ingesting_Common_CV\Resume" />
+      <recent name="C:\Users\agm11\PycharmProjects\Ingesting_Common_CV\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\agm11\PycharmProjects\Ingesting_Common_CV\api\DisplayDataPaginated" />
+      <recent name="C:\Users\agm11\PycharmProjects\Ingesting_Common_CV" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.create_db: Compose Deployment">
+    <configuration name="Ingesting_Common_CV" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Ingesting_Common_CV" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Ingesting_Common_CV.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\jaina\OneDrive - Microsoft Student Partners\Desktop\Ingesting_Common_CV\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="buildOnly" value="true" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="ingesting_common_cv" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.build_indexers: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="build_indexers" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.create_db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="create_db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.test_host: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="test_host" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.Ingesting_Common_CV" />
+      <item itemvalue="Docker.docker-compose.yml.build_indexers: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.test_host: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Docker.docker-compose.yml.create_db: Compose Deployment" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.create_db: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.build_indexers: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.test_host: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.25887978" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="ingesting_common_cv" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="ingesting_common_cv" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="build_indexers" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1022e707-02dd-448b-9cb6-0aa9bfc706b3" name="Default Changelist" comment="" />
+      <created>1584777909975</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584777909975</updated>
+      <workItem from="1584777912845" duration="52952000" />
+      <workItem from="1584869034631" duration="29266000" />
+      <workItem from="1584928219195" duration="1800000" />
+      <workItem from="1584930035675" duration="666000" />
+      <workItem from="1584930715587" duration="4384000" />
+      <workItem from="1584936050929" duration="2376000" />
+      <workItem from="1584938442843" duration="1589000" />
+      <workItem from="1584940674135" duration="2556000" />
+      <workItem from="1584943558104" duration="2127000" />
+      <workItem from="1584945700980" duration="16294000" />
+      <workItem from="1584982267352" duration="6083000" />
+      <workItem from="1585001649976" duration="148000" />
+      <workItem from="1585001824358" duration="2676000" />
+      <workItem from="1585045609822" duration="7432000" />
+      <workItem from="1585053074822" duration="5767000" />
+      <workItem from="1585058915436" duration="8943000" />
+      <workItem from="1585113561259" duration="2830000" />
+      <workItem from="1585116412198" duration="7169000" />
+      <workItem from="1585126829887" duration="2710000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="70" key="#Environment_variables" timestamp="1585050344470">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="70" key="#Environment_variables/0.0.1536.824@0.0.1536.824" timestamp="1585050344470" />
+    <state x="361" y="70" key="#Port_bindings" timestamp="1585051950253">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="70" key="#Port_bindings/0.0.1536.824@0.0.1536.824" timestamp="1585051950253" />
+    <state x="361" y="60" key="#Pull_Image" timestamp="1584934494499">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="361" y="60" key="#Pull_Image/0.0.1536.802@0.0.1536.802" timestamp="1584934494499" />
+    <state x="223" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585115999591">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="223" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.802@0.0.1536.802" timestamp="1585115999591" />
+    <state x="223" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585050727781" />
+    <state x="542" y="192" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585126276132">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="542" y="192" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.802@0.0.1536.802" timestamp="1585126276131" />
+    <state x="499" y="149" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585117760294">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="499" y="149" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.802@0.0.1536.802" timestamp="1585117760294" />
+    <state x="499" y="153" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585053346114" />
+    <state x="491" y="135" key="#docker-compose.yml:_Compose_Deployment" timestamp="1584934180689">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="491" y="135" key="#docker-compose.yml:_Compose_Deployment/0.0.1536.802@0.0.1536.802" timestamp="1584934180689" />
+    <state x="503" y="152" key="EnvironmentVariablesDialog" timestamp="1585050720563">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="503" y="152" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585050720563" />
+    <state x="548" y="143" key="FileChooserDialogImpl" timestamp="1584936721697">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="548" y="143" key="FileChooserDialogImpl/0.0.1536.802@0.0.1536.802" timestamp="1584936721697" />
+    <state width="1493" height="117" key="GridCell.Tab.0.bottom" timestamp="1584972454051">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state width="1493" height="117" key="GridCell.Tab.0.bottom/0.0.1536.802@0.0.1536.802" timestamp="1584972454051" />
+    <state width="1493" height="117" key="GridCell.Tab.0.center" timestamp="1584972454051">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state width="1493" height="117" key="GridCell.Tab.0.center/0.0.1536.802@0.0.1536.802" timestamp="1584972454051" />
+    <state width="1493" height="117" key="GridCell.Tab.0.left" timestamp="1584972454051">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state width="1493" height="117" key="GridCell.Tab.0.left/0.0.1536.802@0.0.1536.802" timestamp="1584972454051" />
+    <state width="1493" height="117" key="GridCell.Tab.0.right" timestamp="1584972454051">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state width="1493" height="117" key="GridCell.Tab.0.right/0.0.1536.802@0.0.1536.802" timestamp="1584972454051" />
+    <state width="189" height="539" key="HiddenNamespacesPopup" timestamp="1584929485516">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state width="189" height="539" key="HiddenNamespacesPopup/0.0.1536.802@0.0.1536.802" timestamp="1584929485516" />
+    <state x="277" y="44" key="SettingsEditor" timestamp="1584936730521">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="277" y="44" key="SettingsEditor/0.0.1536.802@0.0.1536.802" timestamp="1584936730521" />
+    <state x="444" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1584930039571">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="444" y="225" key="com.intellij.ide.util.TipDialog/0.0.1536.802@0.0.1536.802" timestamp="1584930039571" />
+    <state x="419" y="49" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584961464473">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="419" y="49" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.802@0.0.1536.802" timestamp="1584961464473" />
+    <state x="452" y="0" width="640" height="802" key="find.popup" timestamp="1585116822546">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="452" y="0" width="640" height="802" key="find.popup/0.0.1536.802@0.0.1536.802" timestamp="1585116822546" />
+    <state x="452" y="0" width="631" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1585050867974" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Ingesting_Common_CV$api_get_resume_data_views.coverage" NAME="api_get_resume_data_views Coverage Results" MODIFIED="1584818722319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/Resume" />
+    <SUITE FILE_PATH="coverage/Ingesting_Common_CV$xml_to_sqlite.coverage" NAME="xml_to_sqlite Coverage Results" MODIFIED="1584948826280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
