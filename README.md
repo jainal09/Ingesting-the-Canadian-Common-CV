@@ -17,7 +17,7 @@ As with the project itself, it is recommended to use Flask or Django. ✅
 
 >Check [Api Docs Below](#api-docs)
 
-***Further I took it one step further and added the following fuctionalities on the top of these functionalities!***
+***Further I took it one step further and added the following fuctionalities on the top of the above functionalities!***
 
  - **Elastic Search** - Using the traditional `ORM` is good but how about a very smart search with advanced smart search suggestions as you type and many more functionalities such as `tokenizing database data` , `super fast query query results` , `shards and dedicated query servers` and much more.. check more over here https://www.elastic.co/elasticsearch/features
  - **Paginated Data fetch endpoint** - The endpoint which returns  posts in chronological order and also based on view count and score queries the whole db and sends the huge response. This is dangerous and costly, hence I also created a new endpoint to fetch the same results in a `paginated approach` i.e by page by page. Each page contains only 10 results(can be calibrated and changed) making it a better cost effective, fast and efficient approach. Also the response also contains number of pages `page count` which are paginated.
@@ -32,10 +32,12 @@ git clone https://github.com/jainal09/Ingesting-the-Canadian-Common-CV.git
 **I recommend the Docker running Method as it is simple!**
 
 ## Running the Project Docker Method
-*Running the Project is as simple as this!*
+*Running the Project is as simple as it is!*
 *As I had published a docker image specially built for this project on docker hub - https://hub.docker.com/r/jainal09/ingesting_common_cv*
 ```
  cd Ingesting-the-Canadian-Common-CV
+ ```
+ ```
  docker-compose up
 ```
 <br />
@@ -144,10 +146,10 @@ GET http://127.0.0.1:8000/data/?q=view-count
 GET http://127.0.0.1:8000/data/?q=score
 4. Endpoint to return posts in **paginated** `order by viewcount`
 GET http://127.0.0.1:8000/pages/`page-no`/?q=view-count
-> *Dont forget to replace `<page-no>` by page-number example 1,2,3...
+> *Dont forget to replace `page-no` by page-number example 1,2,3...
 5. Endpoint to return posts in **paginated** `order by score`
 GET http://127.0.0.1:8000/pages/`page-no`/?q=view-count
-> *Dont forget to replace `<page-no>` by page-number example 1,2,3...
+> *Dont forget to replace `page-no` by page-number example 1,2,3...
 6. Display Answers endpoint
 The Display answers endpoint is a very sophisticated endpoint having the following features:
 - Display Answers based on question id having one or more answers.
@@ -200,7 +202,7 @@ The Display answers endpoint is a very sophisticated endpoint having the followi
 ```
 ## Search Data Endpoints
 1. Endpoint for Search by way of a query string which filters the posts based on the presence of the search term either in the title or body of the post.  
->GET http://127.0.0.1:8000/search/?q=`<string-to-search>`
+>GET http://127.0.0.1:8000/search/?q=`string-to-search`
 
 Examples:
 > http://127.0.0.1:8000/search/?q=wuhan
@@ -212,7 +214,7 @@ Examples:
 > http://127.0.0.1:8000/search/?q=Why does the
 2. **Elastic Smart Tokenized Search** 
 Endpoint for Search by way of a query string which filters the posts based on the presence of the search term in `title` , `body` & `tags` by prebuilding indexers in elasticsearch and applying multiple tokenizers to enhance search result.
->GET http://127.0.0.1:9200/smart_search/search/?q=`<string-to-search>`
+>GET http://127.0.0.1:9200/smart_search/search/?q=`string-to-search`
 
 Examples:
 > http://127.0.0.1:8000/search/?q=wuhan
@@ -222,3 +224,8 @@ Examples:
 > http://127.0.0.1:8000/search/?q=aaaaaaaaaaaa
 
 > http://127.0.0.1:8000/search/?q=Why does the
+## Data Base Screen Shots
+ - **Questions Table**
+![question table image](https://lh3.googleusercontent.com/Tz3X-dPmlAfV4YsIdqmlcqkF0W8lq4GSmfhcMjCYj2TMF2xLJnuGa3vD9RBnH4OtlZSJ20lyZz33cpIytkjDFGRZesYZoq-ZJ-Zf3iHB-LGEPn4QJB1aHpVyUpsZoIgv_ylATNbFT0o=w1859-h878-no)
+- **Answers Table**
+![answer table image](https://lh3.googleusercontent.com/tEAaEutBdypxqPexwUHYwNNBgVldNvcVy601nnuBDQXenilqwvrXzD5jvXCPzCTgvBtDUV8plAAbfKt9l5vxWphKvv7DTa5NgmM_0irinnVcW1vDCNr6fmNIaxmVvly2etOzgyKeJSU=w1859-h878-no)
