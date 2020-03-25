@@ -36,4 +36,4 @@ class Command(BaseCommand):
 
         print('Indexed questions.')
 
-        print(result)
+        print("indexed entries:" + str(result[0]))

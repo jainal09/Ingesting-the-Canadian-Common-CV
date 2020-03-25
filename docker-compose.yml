@@ -1,71 +1,60 @@
-  version: '3'
-  services:
-    web:
-      image: jainal09/ingesting_common_cv
-      container_name : django
-      build:
-        context: .
-        dockerfile: Dockerfile
-      command: python manage.py runserver 0.0.0.0:8000
-      volumes:
-        - .:/Ingesting_Common_CV
-      ports:
-        - "8000:8000"
-      expose:
-        - "8000"
-      depends_on:
-        - create_db
-    populate_and_migration:
-      image: jainal09/ingesting_common_cv
-      container_name: migtrations
-      command: >
-         sh -c " sleep 3 && python populate.py && python manage.py migrate"
-      volumes:
-        - .:/Ingesting_Common_CV
-      depends_on:
-        - create_db
-    create_db:
-      image: jainal09/ingesting_common_cv
-      container_name: create_db
-      command: >
-        sh -c "rm -f db.sqlite3 &&
-               sqlite3 db.sqlite3 ".database" "
-      volumes:
-        - .:/Ingesting_Common_CV
-    elasticsearch:
-      image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
-      container_name: elasticsearch
-      environment:
-        - xpack.security.enabled=false
-        - discovery.type=single-node
-        - network.bind_host=0.0.0.0
-      ulimits:
-        memlock:
-          soft: -1
-          hard: -1
-        nofile:
-          soft: 65536
-          hard: 65536
-      cap_add:
-        - IPC_LOCK
-      volumes:
-        - elasticsearch-data:/usr/share/elasticsearch/data
-      ports:
-        - 9200:9200
-        - 9300:9300
-    build_indexers:
-      image: jainal09/ingesting_common_cv
-      container_name: elastic_indexer_build
-      environment:
-        - ES_HOST=elasticsearch
-        - ES_PORT=9200
-      depends_on:
-        - elasticsearch
-        - populate_and_migration
-      command: >
-        sh -c "sleep 60 && python manage.py index_questions"
-      volumes:
-        - .:/Ingesting_Common_CV
-  volumes:
-    elasticsearch-data:
-      driver: local
+version: '3'
+services:
+  web:
+    image: jainal09/ingesting_common_cv
+    container_name : django
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/Ingesting_Common_CV
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"
+    depends_on:
+      - populate_and_migration
+  populate_and_migration:
+    image: jainal09/ingesting_common_cv
+    container_name: migtrations
+    command: >
+       sh -c "rm -f db.sqlite3 && sqlite3 db.sqlite3 ".database" && python populate.py && python manage.py migrate"
+    volumes:
+      - .:/Ingesting_Common_CV
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
+    container_name: elasticsearch
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+      - network.bind_host=0.0.0.0
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+  build_indexers:
+    image: jainal09/ingesting_common_cv
+    container_name: elastic_indexer_build
+    environment:
+      - ES_HOST=elasticsearch
+      - ES_PORT=9200
+    depends_on:
+      - elasticsearch
+      - populate_and_migration
+    command: ["./wait-for-it.sh", "-t", "0" , "elasticsearch:9200", "--", "python", "manage.py", "index_questions"]
+    volumes:
+      - .:/Ingesting_Common_CV
+volumes:
+  elasticsearch-data:
+    driver: local

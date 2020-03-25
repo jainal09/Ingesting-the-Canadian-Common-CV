@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', include('api.DisplayDataDefault.api_display_data_default_urls')),
     path('data/', include('api.DisplayData.api_get_raw_urls')),
     path('pages/', include('api.DisplayDataPaginated.api_get_paginated_urls')),
     path('search/', include('api.SearchData.api_search_data_urls')),
