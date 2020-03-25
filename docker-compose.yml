@@ -43,10 +43,6 @@ services:
     ports:
       - 9200:9200
       - 9300:9300
-  script_refiner:
-    image: jainal09/ingesting_common_cv:latest
-    container_name : script_refiner
-    command: dos2unix wait-for-it.sh
   build_indexers:
     image: jainal09/ingesting_common_cv:latest
     container_name: elastic_indexer_build
@@ -54,10 +50,10 @@ services:
       - ES_HOST=elasticsearch
       - ES_PORT=9200
     depends_on:
-      - script_refiner
       - elasticsearch
       - populate_and_migration
-    command: ["./wait-for-it.sh", "-t", "0" , "elasticsearch:9200", "--", "python", "manage.py", "index_questions"]
+    command: >
+      sh -c "dos2unix wait-for-it.sh && ./wait-for-it.sh -t 0 elasticsearch:9200 -- python manage.py index_questions"
     volumes:
       - .:/Ingesting_Common_CV
 volumes:
