@@ -4,6 +4,7 @@ RUN apt-get update \
   && apt-get install -y python3.7-dev \
   && pip3 install --upgrade pip
 RUN apt-get install -y sqlite3 libsqlite3-dev
+RUN apt install -y dos2unix
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /Ingesting_Common_CV
 WORKDIR /Ingesting_Common_CV
