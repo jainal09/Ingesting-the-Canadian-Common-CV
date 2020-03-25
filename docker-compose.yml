@@ -1,7 +1,7 @@
   version: '3'
   services:
     web:
-      image: ingesting_common_cv:latest
+      image: jainal09/ingesting_common_cv
       container_name : django
       build:
         context: .
@@ -16,7 +16,7 @@
       depends_on:
         - create_db
     populate_and_migration:
-      image: ingesting_common_cv:latest
+      image: jainal09/ingesting_common_cv
       container_name: migtrations
       command: >
          sh -c " sleep 3 && python populate.py && python manage.py migrate"
@@ -25,7 +25,7 @@
       depends_on:
         - create_db
     create_db:
-      image: ingesting_common_cv:latest
+      image: jainal09/ingesting_common_cv
       container_name: create_db
       command: >
         sh -c "rm -f db.sqlite3 &&
@@ -54,7 +54,7 @@
         - 9200:9200
         - 9300:9300
     build_indexers:
-      image: ingesting_common_cv:latest
+      image: jainal09/ingesting_common_cv
       container_name: elastic_indexer_build
       environment:
         - ES_HOST=elasticsearch
