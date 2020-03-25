@@ -69,8 +69,14 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-
-**Populating DB from xml**
+**Setup Database**
+```
+sudo apt-get install -y sqlite3 libsqlite3-dev
+```
+```
+sqlite3 db.sqlite3 ".database"
+```
+**Populating DataBase from xml**
 
 ```
 python populate.py
