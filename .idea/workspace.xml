@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72f57b35-99b4-4294-9b55-e64edcf39f6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Ingesting-the-Canadian-Common-CV.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Ingesting_Common_CV.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db-DESKTOP-GG7KLNJ.sqlite3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585164320635</updated>
       <workItem from="1585164326822" duration="2704000" />
-      <workItem from="1585174944554" duration="257000" />
+      <workItem from="1585174944554" duration="1458000" />
     </task>
     <task id="LOCAL-00001" summary="pagination bug solved">
       <created>1585165909220</created>
@@ -89,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585165909220</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dos2unix added to solve wait-for-it bug">
+      <created>1585175226843</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585175226843</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,21 +95,22 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="pagination bug solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination bug solved" />
+    <MESSAGE value="Dos2unix added to solve wait-for-it bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dos2unix added to solve wait-for-it bug" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1585165907521">
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1585175225292">
       <screen x="0" y="0" width="1536" height="802" />
     </state>
-    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.802@0.0.1536.802" timestamp="1585165907521" />
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.802@0.0.1536.802" timestamp="1585175225292" />
     <state x="549" y="157" key="FileChooserDialogImpl" timestamp="1585164836501">
       <screen x="0" y="0" width="1536" height="802" />
     </state>
     <state x="549" y="157" key="FileChooserDialogImpl/0.0.1536.802@0.0.1536.802" timestamp="1585164836501" />
-    <state x="361" y="131" key="Vcs.Push.Dialog.v2" timestamp="1585165911663">
+    <state x="361" y="131" key="Vcs.Push.Dialog.v2" timestamp="1585175231545">
       <screen x="0" y="0" width="1536" height="802" />
     </state>
-    <state x="361" y="131" key="Vcs.Push.Dialog.v2/0.0.1536.802@0.0.1536.802" timestamp="1585165911663" />
+    <state x="361" y="131" key="Vcs.Push.Dialog.v2/0.0.1536.802@0.0.1536.802" timestamp="1585175231545" />
     <state x="431" y="123" width="672" height="678" key="search.everywhere.popup" timestamp="1585164705743">
       <screen x="0" y="0" width="1536" height="802" />
     </state>

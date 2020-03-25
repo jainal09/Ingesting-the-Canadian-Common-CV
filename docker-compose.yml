@@ -44,7 +44,7 @@ services:
       - 9200:9200
       - 9300:9300
   script_refiner:
-    image:jainal09/ingesting_common_cv:latest
+    image: jainal09/ingesting_common_cv:latest
     container_name : script_refiner
     command: dos2unix wait-for-it.sh
   build_indexers:
