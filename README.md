@@ -4,7 +4,7 @@
 In this project I implemented all the requirements of the problem statement:
 ### Selection tests
 
-As with the project itself, it is recommended to use Flask or Django.
+As with the project itself, it is recommended to use Flask or Django. ✅
 >Project purely written in python django
 
 1- First step is to ingest this file in a sqlite database. ✅
