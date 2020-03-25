@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1022e707-02dd-448b-9cb6-0aa9bfc706b3" name="Default Changelist" comment="" />
+    <list default="true" id="1022e707-02dd-448b-9cb6-0aa9bfc706b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,13 +35,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZVdUlU9kBZuygacuEJJyH2x0bJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -158,8 +167,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.docker-compose.yml.create_db: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.build_indexers: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.test_host: Compose Deployment" />
@@ -176,17 +185,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="ingesting_common_cv" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="ingesting_common_cv" type="9fbbdea:ServiceModel$ServiceNode" />
-                <item name="build_indexers" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -223,7 +221,7 @@
       <workItem from="1585058915436" duration="8943000" />
       <workItem from="1585113561259" duration="2830000" />
       <workItem from="1585116412198" duration="7169000" />
-      <workItem from="1585126829887" duration="2710000" />
+      <workItem from="1585126829887" duration="4248000" />
     </task>
     <servers />
   </component>
@@ -252,10 +250,10 @@
       <screen x="0" y="0" width="1536" height="802" />
     </state>
     <state x="361" y="60" key="#Pull_Image/0.0.1536.802@0.0.1536.802" timestamp="1584934494499" />
-    <state x="223" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585115999591">
+    <state x="223" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585130583863">
       <screen x="0" y="0" width="1536" height="802" />
     </state>
-    <state x="223" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.802@0.0.1536.802" timestamp="1585115999591" />
+    <state x="223" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.802@0.0.1536.802" timestamp="1585130583863" />
     <state x="223" y="59" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585050727781" />
     <state x="542" y="192" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585126276132">
       <screen x="0" y="0" width="1536" height="802" />

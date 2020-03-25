@@ -15,15 +15,15 @@
         - "8000"
       depends_on:
         - create_db
-    migration:
+    populate_and_migration:
       image: ingesting_common_cv:latest
       container_name: migtrations
       command: >
-         sh -c " sleep 25 && python manage.py migrate"
+         sh -c " sleep 3 && python populate.py && python manage.py migrate"
       volumes:
         - .:/Ingesting_Common_CV
       depends_on:
-        - populate_db
+        - create_db
     create_db:
       image: ingesting_common_cv:latest
       container_name: create_db
@@ -32,15 +32,6 @@
                sqlite3 db.sqlite3 ".database" "
       volumes:
         - .:/Ingesting_Common_CV
-    populate_db:
-      image: ingesting_common_cv:latest
-      container_name: populate_db
-      command: >
-        sh -c " sleep 3 && python populate.py"
-      volumes:
-        - .:/Ingesting_Common_CV
-      depends_on:
-        - create_db
     elasticsearch:
       image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
       container_name: elasticsearch
@@ -70,7 +61,7 @@
         - ES_PORT=9200
       depends_on:
         - elasticsearch
-        - populate_db
+        - populate_and_migration
       command: >
         sh -c "sleep 60 && python manage.py index_questions"
       volumes:
