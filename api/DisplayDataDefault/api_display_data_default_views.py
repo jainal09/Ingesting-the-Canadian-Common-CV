@@ -17,7 +17,6 @@ class Default(APIView):
             if question["ViewCount"]==None:
                 continue
             questionid = question["Id"]
-            print(questionid)
             questionData = DisplayAllQuestionFacade.getData(questionID=questionid)
             dataToSend.append(questionData)
         data_dic = {

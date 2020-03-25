@@ -16,6 +16,7 @@ class SortBy(APIView):
     def get(self,request):
         q = request.GET.get('q')
         if q == "view-count":
+            print("i am here")
             orderedViewsObject = QuestionModel.objects.order_by("-ViewCount")
 
             allData=orderedViewsObject.values()
@@ -24,7 +25,6 @@ class SortBy(APIView):
                 if question["ViewCount"]==None:
                     continue
                 questionid = question["Id"]
-                print(questionid)
                 questionData = DisplayAllQuestionFacade.getData(questionID=questionid)
                 dataToSend.append(questionData)
             data_dic = {

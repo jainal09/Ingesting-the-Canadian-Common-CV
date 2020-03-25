@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: jainal09/ingesting_common_cv
+    image: jainal09/ingesting_common_cv:latest
     container_name : django
     build:
       context: .
@@ -16,7 +16,7 @@ services:
     depends_on:
       - populate_and_migration
   populate_and_migration:
-    image: jainal09/ingesting_common_cv
+    image: jainal09/ingesting_common_cv:latest
     container_name: migtrations
     command: >
        sh -c "rm -f db.sqlite3 && sqlite3 db.sqlite3 ".database" && python populate.py && python manage.py migrate"
@@ -44,7 +44,7 @@ services:
       - 9200:9200
       - 9300:9300
   build_indexers:
-    image: jainal09/ingesting_common_cv
+    image: jainal09/ingesting_common_cv:latest
     container_name: elastic_indexer_build
     environment:
       - ES_HOST=elasticsearch
