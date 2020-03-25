@@ -204,8 +204,11 @@ The Display answers endpoint is a very sophisticated endpoint having the followi
 
 Examples:
 > http://127.0.0.1:8000/search/?q=wuhan
+
 > http://127.0.0.1:8000/search/?q=wuh
+
 > http://127.0.0.1:8000/search/?q=aaaaaaaaaaaa
+
 > http://127.0.0.1:8000/search/?q=Why does the
 2. **Elastic Smart Tokenized Search** 
 Endpoint for Search by way of a query string which filters the posts based on the presence of the search term in `title` , `body` & `tags` by prebuilding indexers in elasticsearch and applying multiple tokenizers to enhance search result.
@@ -213,6 +216,9 @@ Endpoint for Search by way of a query string which filters the posts based on th
 
 Examples:
 > http://127.0.0.1:8000/search/?q=wuhan
+
 > http://127.0.0.1:8000/search/?q=wuh
+
 > http://127.0.0.1:8000/search/?q=aaaaaaaaaaaa
+
 > http://127.0.0.1:8000/search/?q=Why does the
